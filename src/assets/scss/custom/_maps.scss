@@ -1,0 +1,10 @@
+@use 'sass:map';
+
+// Custom maps
+$custom-colors: (
+  'special': $special,
+  'bg-frente-caixa': $bg-frente-caixa,
+);
+
+// Merge the maps
+$theme-colors: map.merge($theme-colors, $custom-colors);

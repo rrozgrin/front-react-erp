@@ -1,0 +1,1 @@
+export { ConfiguracoesSistemaPage } from './ConfiguracoesSistemaPage';

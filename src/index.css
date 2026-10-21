@@ -1,0 +1,125 @@
+:root {
+    /* --- TIPOGRAFIA --- */
+    --font-size-2xs: 0.6875rem; /* 11px */
+    --font-size-xs: 12px; /* 12px */
+    --font-size-sm: 13px; /* 13px */
+    --font-size-md: 0.875rem; /* 14px */
+    --font-size-lg: 1rem; /* 16px */
+    --font-size-xl: 1.125rem; /* 18px */
+    --font-size-2xl: 1.25rem; /* 20px */
+    --font-size-3xl: 1.5rem; /* 24px */
+    --font-size-base: var(--font-size-sm);
+    --app-font-size-default: var(--font-size-sm);
+    --app-font-size-title: var(--font-size-xs);
+    --app-font-family-default: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --app-font-weight-default: 400;
+    --app-font-weight-title: 500;
+
+    /* --- ESPACAMENTOS --- */
+    --space-2xs: 5px; /* 5px */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 0.75rem; /* 12px */
+    --space-md: 1rem; /* 16px */
+    --space-lg: 1.5rem; /* 24px */
+    --space-xl: 2rem; /* 32px */
+
+    /* --- DIMENSOES --- */
+    --control-height-sm: 2.625rem; /* 42px */
+    --control-height-md: 3rem; /* 48px */
+    --control-height-lg: 3.125rem; /* 50px */
+    --table-min-width-compact: 35rem; /* 560px */
+    --table-min-width: 45rem; /* 720px */
+
+    /* --- SUPERFICIES --- */
+    --surface-panel: #ffffff;
+    --surface-panel-soft: #f8fafc;
+    --surface-border: #e6ebf2;
+    --theme-surface: var(--surface-panel);
+    --theme-surface-soft: rgba(21, 129, 215, 0.08);
+    --theme-surface-muted: var(--surface-panel-soft);
+    --theme-border: var(--surface-border);
+
+    /* --- TEXTOS --- */
+    --text-strong: #172033;
+    --text-muted: #64748b;
+    --theme-text: var(--text-strong);
+    --theme-text-soft: var(--text-muted);
+
+    /* --- STATUS --- */
+    --status-success: #16a34a;
+    --status-danger: #dc2626;
+
+    /* --- BORDAS --- */
+    --radius-xs: 0.125rem; /* 2px */
+    --radius-sm: 0.25rem; /* 4px */
+    --radius-md: 0.375rem; /* 6px */
+    --radius-lg: 0.5rem; /* 8px */
+    --radius-xl: 0.75rem; /* 12px */
+    --radius-pill: 999px;
+
+    /* --- SOMBRAS --- */
+    --shadow-panel: 0 8px 24px rgba(15, 23, 42, 0.05);
+    --shadow-panel-strong: 0 18px 45px
+        rgba(var(--bs-primary-rgb, 30, 94, 149), 0.08);
+    --shadow-focus: 0 0 0 1px var(--color-main, var(--bs-primary));
+    --shadow-control-hover: 0 8px 16px
+        rgba(var(--bs-primary-rgb, 30, 94, 149), 0.15);
+    --shadow-floating: 0 12px 28px rgba(var(--bs-dark-rgb, 33, 37, 41), 0.18);
+    --shadow-floating-hover: 0 16px 34px
+        rgba(var(--bs-dark-rgb, 33, 37, 41), 0.22);
+
+    /* --- BASE GLOBAL --- */
+    font-family: var(--app-font-family-default);
+    color: var(--theme-text, var(--color-secondary, #1f2933));
+    background:
+        radial-gradient(
+            circle at top,
+            var(--theme-surface-soft, rgba(21, 129, 215, 0.08)),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            var(--theme-surface, #fafafa) 0%,
+            var(--theme-surface-muted, #f2f4f7) 100%
+        );
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100vh;
+    font-family: var(--app-font-family-default);
+}
+
+body {
+    margin: 0;
+    font-family: var(--app-font-family-default);
+    /* font-size: var(--app-font-size-default);
+    font-weight: var(--app-font-weight-default); */
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+}
+
+.modal input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.modal select {
+    min-height: 40px;
+    height: 40px;
+}
+
+.modal label {
+    font-weight: 500 !important;
+}

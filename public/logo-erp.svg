@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72" role="img" aria-label="ERP Demo">
+  <rect width="240" height="72" rx="14" fill="#163a6b"/>
+  <rect x="14" y="14" width="44" height="44" rx="10" fill="#39b9a7"/>
+  <path d="M27 27h18M27 36h14M27 45h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="45" fill="#fff" font-family="Arial, sans-serif" font-size="27" font-weight="700">ERP Demo</text>
+</svg>
